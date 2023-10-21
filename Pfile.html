@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 90px;
+            background-color: rgb(36, 39, 39);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+
+
+        }
+
+        nav ul li a:hover {
+            color: rgb(45, 19, 245);
+            font-size: 1.2rem;
+
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 80px 0;
+        }
+
+        .firstsection div {
+            width: 30%;
+        }
+
+        .leftsection {
+
+            font-size: 3rem;
+            margin: 30px 0;
+
+        }
+
+        .rightsection img {
+            width: 80%;
+            margin: 50px 0;
+
+        }
+
+        .purple {
+            color: blue;
+        }
+
+        .tegray {
+            color: azure;
+
+        }
+
+        #element {
+            color: chartreuse;
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondsection h1 {
+            font-size: 1.9rem;
+        }
+
+    
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Ayush Dongarwar's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/in/iayushdongarwar">Home</a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/iayushdongarwar">About</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/AyushDongarwar">Services</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/AyushDongarwar">Projects</a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/iayushdongarwar">Contact Me</a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/iayushdongarwar">Connect</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">Hi 👋, I'm <span class="purple">Ayush Dongarwar..</span>..
+                <div><br>
+                    <div class="short">
+                        <p>And_I work_on..</p>
+                    </div>
+                    <span id="element"></span>
+                </div>
+            </div>
+            <div class="rightsection">
+                <img src="R.png" alt style="
+                    width: 100%;
+                    margin: 0px 5px;">
+
+            </div>
+
+        </section>
+        <hr>
+        <section class="secondsection">
+            <span class="tegray">What i do</span>
+            <br>
+            <h1>>About me and my expirence</h1>
+            <br>
+            <p> I am a passionate and driven individual pursuing a UG degree in Robotics and Artificial Intelligence,
+                and developing my skills as a full-stack blockchain developer. I am excited about the intersection of
+                these technologies and their potential to revolutionize the world.</p>
+<br>
+
+            <p>In my robotics and AI studies, I am learning about the design and development of autonomous robots, as
+                well as the machine learning algorithms that power them. I am particularly interested in using robotics
+                and AI to solve real-world problems in healthcare, transportation, and manufacturing.</p>
+                <br>
+
+            <p>In my blockchain development studies, I am learning about the technology behind distributed ledgers,
+                smart contracts, and decentralized applications. I am excited about the potential of blockchain to
+                create new trustless and secure systems for transactions, data sharing, and governance.</p>
+                <br>
+
+            <p>I am eager to use my skills and knowledge to develop innovative solutions that make a positive impact on
+                the world. I believe that robotics, AI, and blockchain have the potential to create a more efficient,
+                equitable, and sustainable future.</p>
+
+
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Robotics Software.', 'Blockchain Developer', 'Smart Contract Development', 'and_Robotics Blockchain Integration...'],
+            typeSpeed: 50,
+        });
+    </script>
+
+</body>
+
+</html>
