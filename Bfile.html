@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Cart.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'poppins', sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .Topp {
+            width: 80%;
+            height: 4rem;
+            background-color: rgb(100, 145, 89);
+            margin-bottom: 20px;
+            display: flex;
+            padding: 0px 20px;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .fa-solid {
+            color: rgb(4, 213, 143);
+            margin-right: 10px;
+        }
+
+        .header {
+            width: 80%;
+            height: 200px;
+            background-color: rgb(17, 238, 101);
+            margin-bottom: 20px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar p {
+            font-size: 30px;
+            font-weight: bold;
+            color: rgb(3, 66, 21);
+        }
+
+        .navbar ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            font-size: 18px;
+            color: rgb(190, 51, 51);
+            padding: 7px 15px;
+
+        }
+
+        .navbar ul li a:hover {
+            background-color: blueviolet;
+            color: red;
+            border-radius: 4px;
+        }
+
+        .navbar-b {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .dropdown {
+            width: 130px;
+            text-align: center;
+            background-color: rgb(196, 165, 128);
+            border-radius: 4px;
+        }
+
+        select {
+            outline: none;
+            border: none;
+            background: none;
+            padding: 7px 10px 7px 0px;
+            font-size: 18px;
+            cursor: pointer;
+
+        }
+
+        select:hover {
+            color: chartreuse;
+        }
+
+        .search {
+            width: 450px;
+            background-color: rgb(255, 255, 255);
+            height: 45px;
+            border-radius: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+        }
+
+        .search input {
+            width: 440px;
+            border: none;
+            outline: none;
+            height: 40px;
+        }
+
+        .Cart {
+            display: flex;
+            background-color: rgb(255, 255, 255);
+            justify-content: space-between;
+            align-items: center;
+            padding: 7px 10px;
+            border-radius: 3px;
+            width: 80px;
+            font-size: 18px;
+        }
+
+        .Cart p {
+            height: 22px;
+            width: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 50%;
+            background-color: black;
+            color: wheat;
+        }
+
+        .container {
+            width: 80%;
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        #root {
+            width: auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 50px;
+        }
+        .sidebar{
+            width: 30%;
+            border-radius: 5px;
+            background-color: rgb(240, 240, 240);
+            margin-left: auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .box{
+          display: flex;
+          justify-content: space-between;
+          padding: 20px;
+          border: 1px solid #aaa;
+          border-radius: 5px;  
+        }
+        .img-box{
+            width: 50%;
+            height: 170px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .left{
+            width: 50%;
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            margin-left: 60px;
+        }
+        img{
+            max-width: 90%;
+            max-height: 90%;
+            object-fit: cover;
+            object-position: center;
+        }
+        button{
+            border: none;
+            border-radius: 5px;
+            background-color: aquamarine;
+            padding: 10px 25px;
+            cursor: pointer;
+            color: white;
+        }
+        button:hover{
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Topp">
+        <p><i class="fa-solid fa-envelope"></i>ayus@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i>+120985020</p>
+    </div>
+    <div class="header">
+        <div class="navbar">
+            <p>Plant's Market</p>
+            <ul>
+                <li><a href="http://127.0.0.1:5500/web/Bfile.html">Home</a></li>
+                <li><a href="http://127.0.0.1:5500/web/Bfile.html">store</a></li>
+                <li><a href="http://127.0.0.1:5500/web/Bfile.html">About</a></li>
+                <li><a href="http://127.0.0.1:5500/web/Pfile.html">Contact</a></li>
+                <li><a href="http://127.0.0.1:5500/web/Pfile.html">Help</a></li>
+            </ul>
+            <div class="navbar-b">
+                <div class="dropdown">
+                    <select name="">
+                        <option value="1">Categories</option>
+                        <option value="2">Low to high</option>
+                        <option value="3">High to low</option>
+                        <option value="4">Newest First</option>
+                    </select>
+
+                </div>
+
+            </div>
+            <div class="search">
+                <input type="search" placeholder="search..">
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+            </div>
+            <div class="Cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p>0</p>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div id="root"></div>
+        <div class="sidebar"><h3>Added Items</h3></div>
+    </div>
+    <script src="Ecomm.js"></script>
+</body>
+
+</html>
