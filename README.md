@@ -1,2 +1,5 @@
-MY portfolio and first trial bussiness website..
+MY Profile portfolio  
+and
+first trial bussiness website..
+
 #By Ayush Dongarwar
